@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="AR Services">
+    <title>AR Services | Servicios</title>
+
+    <link href="assets/favicon/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer src="assets/js/servicios.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__principal">
+                <a href="#" class="nav__logo">
+                    <img src="assets/logo/logo-light.png" alt="" class="img__logo"/>
+                </a>
+                <span class="nav__slogan">
+                    "Impulsando Negocios del Futuro"
+                </span>
+                <div class="middle">
+                    <a href="contacto.html" class="nav__button btn">Cotiza</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                Menú
+                <span class="hamburguer-icon" id="hamburguer-icon"><i class="fa fa-bars"></i></span-hamburguer-icon>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav__list">
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="index.html" class="seleccionado nav__link active-link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/home.png" alt="" class="icon-menu">
+                                <p>INICIO</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="acerca-de-nosostros.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/nosotros.png" alt="" class="icon-menu">
+                                <p>NOSOTROS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contpaqi.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contpaqi.png" alt="" class="icon-menu">
+                                <p>CONTPAQi®</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="servicios.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/services.png" alt="" class="icon-menu">
+                                <p>SERVICIOS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contact.png" alt="" class="icon-menu">
+                                <p>CONTACTO</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cover-container servicios">
+            <div class="cabecera">
+                <h1>SERVICIOS</h1>
+                <p>Encuentra el servicio que se adecua a tus necesidades</p>
+                <a href="contacto.html" class="button">Cotiza</a>
+            </div>
+            <div class="img-cabecera">
+                <a href="#software">
+                    <div class="elemento-cabecera">
+                        <img src="assets/img/servicios/desarrollo-de-software.png" alt="">
+                        <div class="info">
+                            <h4>Desarrollo de Software</h4>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#desarrollo-web">
+                    <div class="elemento-cabecera">
+                        <img src="assets/img/servicios/desarrollo-web.png" alt="">
+                        <div class="info">
+                            <h4>Desarrollo Web</h4>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#asesoria">
+                    <div class="elemento-cabecera">
+                        <img src="assets/img/servicios/asesoría.png" alt="">
+                        <div class="info">
+                            <h4>Asesoría</h4>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#venta-reparacion">
+                    <div class="elemento-cabecera">
+                        <img src="assets/img/servicios/equipo-de-computo.jpg" alt="">
+                        <div class="info">
+                            <h4>Venta y Reparación <br>de Equipos de Cómputo</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="contenedor-servicios-tipo mensaje" id="software">
+            <h1>Software hecho a la medida</h1>
+            <div id="slider">
+                <figure>
+                    <div class="servicios-slider">
+                        <h2>Manufactura</h2>
+                        <div class="contenedor-servicios">
+                            <div class="contenedor-ventajas">
+                                <h3>Ventajas de implantar un software de producción</h3>
+                                <div class="ventajas ">
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-1.png" alt="">
+                                            <h3>obtener indicadores e informes de rendimiento</h3>
+                                        </div>
+        
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-2.png" alt="">
+                                            <h3>Ahorrar costes de producción</h3>
+                                        </div>
+        
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-3.png" alt="">
+                                            <h3>Automatizar el abastecimiento y ajustar producción y demanda</h3>
+                                        </div>
+        
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-4.png" alt="">
+                                            <h3>Cumplir los plazos y mejorar los tiempos de producción</h3>
+                                        </div>
+        
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-5.png" alt="">
+                                            <h3>Conocer en tiempo real del estado del inventario</h3>
+                                        </div>
+        
+                                        <div class="descripcion">
+                                            <img src="assets/img/servicios/icono-6.png" alt="">
+                                            <h3>Facilitar la comunicación entre las áreas implicadas</h3>
+                                        </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/servicios/Gestion de alamacenes.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="servicios-slider">
+                        <h2>Punto de venta</h2>
+                        <div class="descripcion-pv">
+                            <img src="assets/img/servicios/Punto de Venta.jpeg" alt="">
+                            <img src="assets/img/servicios/PV 1.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="servicios-slider">
+                        <h2>Creación de Reportes y Dashboard</h2>
+                        <div class="descripcion-pv">
+                            <img src="assets/img/servicios/Sistema de Gestion de Operacion.png" alt="">
+                            <img src="assets/img/servicios/Dashhboard.jpeg" alt="">
+                        </div>
+                    </div>
+                    
+                </figure>
+                
+            </div>
+            
+        </div>
+
+        <div class="servicios-tipo mensaje" id="desarrollo-web">
+            <h1>Creación de Páginas Web</h1>
+            <div class="descripcion-pv">
+                <img src="assets/img/servicios/Como-Crear-Una-Pagina-Web.jpg" alt="">
+                <img src="assets/img/servicios/crear-pagina-web-gratis-img_header.jpg" alt="">
+            </div> 
+        </div>
+
+        <div class="servicios-tipo mensaje" id="asesoria">
+            <h1>Asesoría Administrativa y Contable</h1>
+            <div class="descripcion-pv">
+                <img src="assets/img/servicios/asesor-contable.png" alt="">
+            </div>
+        </div>
+
+        <section class="marcas-slider mensaje" id="venta-reparacion">
+            <h1>Venta y Reparación de Equipos de Cómputo</h1>
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-1.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-3.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-4.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-5.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-6.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-8.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-1.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-3.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-4.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-5.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-6.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-8.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-1.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-3.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-4.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-5.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-6.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/servicios/marca-8.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="column1">
+                <img src="assets/logo/logo-dark.png" alt="" class="img__logo footer-logo">
+                <p class="contenidoColumna1">
+                    "Impulsando Negocios del Futuro"
+                </p>
+                <p class="contenidoColumna1">
+                    Somos profesionales experimentados que entendemos que los servicios estan cambiando, y somos verdaderos aliados que se preocupan por su futuro éxito empresarial.
+                </p>
+            </div>
+
+            <div class="column2">
+                <h2 class="tituloColumnas">CONTPAQi®</h2>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-contables">Sistemas Contables</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-administrativos">Sistemas Administrativos</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-nube">Sistemas de Nube</a><br>
+            </div>
+
+            <div class="column3">
+                <h2 class="tituloColumnas">SERVICIOS</h2>
+                <a class="contenidoColumnas" href="servicios.html/#software">Software a la Medida</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#desarrollo-web">Desarrollo Web</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#asesoria">Asesoría</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#venta-reparacion">Venta y Reparación de PCs</a><br>
+            </div>
+
+            <div class="column4">
+                <h2 class="tituloColumnas">CONTÁCTANOS</h2>
+                <div class="redes-container">
+                    <a href="https://www.facebook.com/ARSERVICESCONTPAQI" Target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="tel:+528335110241"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:info@arservices.mx"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="container-background-logo">
+                <img class="background-logo" src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="final-footer">
+            <p class="derechosReservados">
+                @2023 AR Services. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <div class="comentarios">
+        <div class="comentario burbuja transform-right">
+            <p>Si necesitas de un software hecho a la medida, nosotros podemos ayudarte.</p>
+        </div>
+    </div>
+
+    <div class="comentarios">
+        <div class="comentario burbuja transform-right">
+            <p>Si necesitas de una página de web, nosotros podemos ayudarte.</p>
+        </div>
+    </div>
+
+    <div class="comentarios">
+        <div class="comentario burbuja transform-right">
+            <p>Si necesitas de una asesoría administrativa y/o contable, nosotros podemos ayudarte.</p>
+        </div>
+    </div>
+
+    <div class="comentarios">
+        <div class="comentario burbuja transform-right">
+            <p>Si necesitas comprar o reparar un equipo de cómputo, nosotros podemos ayudarte.</p>
+        </div>
+    </div>
+    
+    <a href="https://api.whatsapp.com/send?phone=528333461003&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float "></i>
+    </a>
+
+    <script defer src="assets/js/hamburguer-menu-reveal.js"></script>   
+</body>
+</html>

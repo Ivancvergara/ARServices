@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="AR Services">
+    <title>AR Services | Contacto</title>
+    <link href="assets/favicon/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__principal">
+                <a href="#" class="nav__logo">
+                    <img src="assets/logo/logo-light.png" alt="" class="img__logo"/>
+                </a>
+                <span class="nav__slogan">
+                    "Impulsando Negocios del Futuro"
+                </span>
+                <div class="middle">
+                    <a href="contacto.html" class="nav__button btn">Cotiza</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                Menú
+                <span class="hamburguer-icon" id="hamburguer-icon"><i class="fa fa-bars"></i></span-hamburguer-icon>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav__list">
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="index.html" class="seleccionado nav__link active-link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/home.png" alt="" class="icon-menu">
+                                <p>INICIO</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="acerca-de-nosostros.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/nosotros.png" alt="" class="icon-menu">
+                                <p>NOSOTROS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contpaqi.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contpaqi.png" alt="" class="icon-menu">
+                                <p>CONTPAQi®</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="servicios.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/services.png" alt="" class="icon-menu">
+                                <p>SERVICIOS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contact.png" alt="" class="icon-menu">
+                                <p>CONTACTO</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cover-container contacto">
+            <div class="cover-text">
+                <h1>CONTÁCTANOS</h1>
+                <p>¿Tienes alguna duda o necesitas ayuda con alguna información? No dudes en comunicarte con nostros, estamos para servirte.</p>
+            </div>
+        </div>
+
+        <section class="contact-container">
+            <div class="contact-form">
+                <div class="form">
+                    <div class="texto">
+                        <h2>Contáctanos</h2>
+                        <p>En AR Services nos comprometemos en ofrecerte un excelente servicio que merces, por lo que si necesitas ayuda, puedes comunicarte con nostros en cualquiera de los siguientes medios.</p>
+                    </div>
+                    <form action="https://formsubmit.co/irvingivancuevasvergara@gmail.com" method="POST" />
+                        <div class="input-box">
+                            <label for="">Nombre Completo</label>
+                            <input type="text" name="Nombre" placeholder="Nombre Completo" required>
+        
+                            <label for="">Correo Electrónico</label>
+                            <input type="email" name="E-mail" placeholder="Correo Electrónico" required>
+        
+                            <label for="">Asunto</label>
+                            <input type="text" name="Asunto" placeholder="Asunto" required>
+                            
+                            <label for="">Mensaje</label>
+                            <textarea name="Mensaje" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                    </form> 
+                </div>
+                <div class="info">
+                    <div class="img-box">
+                        <img src="assets/img/contacto/form-img.png" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div class="info-contacto">
+                            <ion-icon name="map"></ion-icon><p>Tampico, Tamaulipas, México</p>
+                        </div>
+                        <div class="info-contacto">
+                            <ion-icon name="call"></ion-icon>
+                            <p>(+52) 833 346 10 03</p>
+                        </div>
+                        <div class="info-contacto">
+                            <ion-icon name="mail"></ion-icon>
+                            <p>info@arservices.mx</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="column1">
+                <img src="assets/logo/logo-dark.png" alt="" class="img__logo footer-logo">
+                <p class="contenidoColumna1">
+                    "Impulsando Negocios del Futuro"
+                </p>
+                <p class="contenidoColumna1">
+                    Somos profesionales experimentados que entendemos que los servicios estan cambiando, y somos verdaderos aliados que se preocupan por su futuro éxito empresarial.
+                </p>
+            </div>
+
+            <div class="column2">
+                <h2 class="tituloColumnas">CONTPAQi®</h2>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-contables">Sistemas Contables</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-administrativos">Sistemas Administrativos</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-nube">Sistemas de Nube</a><br>
+            </div>
+
+            <div class="column3">
+                <h2 class="tituloColumnas">SERVICIOS</h2>
+                <a class="contenidoColumnas" href="servicios.html/#software">Software a la Medida</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#desarrollo-web">Desarrollo Web</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#asesoria">Asesoría</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#venta-reparacion">Venta y Reparación de PCs</a><br>
+            </div>
+
+            <div class="column4">
+                <h2 class="tituloColumnas">CONTÁCTANOS</h2>
+                <div class="redes-container">
+                    <a href="https://www.facebook.com/ARSERVICESCONTPAQI" Target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="tel:+528335110241"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:info@arservices.mx"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="container-background-logo">
+                <img class="background-logo" src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="final-footer">
+            <p class="derechosReservados">
+                @2023 AR Services. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    
+    <a href="https://api.whatsapp.com/send?phone=528333461003&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float "></i>
+    </a>
+
+    <script defer src="assets/js/hamburguer-menu-reveal.js"></script>   
+</body>
+</html>

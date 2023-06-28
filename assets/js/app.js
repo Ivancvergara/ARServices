@@ -2,6 +2,17 @@ $(window).on('load', function() {
     $('#slider').nivoSlider(); 	
 }); 
 
+$('.hamburguer-icon').on('click', function(){
+  $('.nav__list').toggleClass('reveal');
+})
+
+// const menu = document.getElementById('hamburguer-icon');
+// const nav = document.getElementById('nav__list');
+
+// menu.addEventListener('click', function() {
+//   nav.getElementById('nav__list').classList.toggle('reveal');
+// })
+
 'use strict'
 
 const li        = document.querySelectorAll('.li')
@@ -37,19 +48,16 @@ li.forEach( ( cadaLi , i )=>{
 // Slider Productos
 
 var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-    },
-    autoplay: {
-        delay: 5000,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 2,
+    stretch: 0,
+    depth: 100,
+    modifier: 3.35,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -58,5 +66,32 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
     }
-  });
+});
+
+// Slider de Testimonios
+
+var slide = document.getElementById("testimonial-slide");
+var upArrow = document.getElementById("upArrow");
+var downArrow = document.getElementById("downArrow");
+
+let x = 0;
+
+downArrow.onclick = function(){
+  if(x > "-300"){
+    x = x - 300;
+    slide.style.top = x + "px";
+  }
+  
+}
+
+upArrow.onclick = function(){
+  if(x < 0){
+    x = x + 300;
+    slide.style.top = x + "px";
+  }
+}
+

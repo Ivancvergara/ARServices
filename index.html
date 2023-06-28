@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="AR Services">
     <link href="assets/favicon/favicon.png" rel="icon">
     <title>AR Services</title>
@@ -11,57 +11,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/slider-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/jquery.nivo.slider.js"></script>
     <script defer src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav">
             <div class="nav__principal">
-                <a href="#" class="nav__logo"><img src="assets/logo/logo-light.png" alt="" class="img__logo"/></a>
+                <a href="#" class="nav__logo">
+                    <img src="assets/logo/logo-light.png" alt="" class="img__logo"/>
+                </a>
                 <span class="nav__slogan">
                     "Impulsando Negocios del Futuro"
                 </span>
                 <div class="middle">
-                    <a href="#" class="nav__button btn">Cotiza</a>
+                    <a href="contacto.html" class="nav__button btn">Cotiza</a>
                 </div>
+            </div>
+            <div class="menu-bar">
+                Menú
+                <span class="hamburguer-icon"><i class="fa fa-bars"></i></span-hamburguer-icon>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav__list">
-                    <div class="icon-container"><img src="assets/favicon/home.png" alt="" class="icon-menu"><li class="nav__item"><a href="#home" class="seleccionado nav__link active-link" onclick="seleccionar(this)">Inicio</a></li></div>
-                    <div class="icon-container"><img src="assets/favicon/products.png" alt="" class="icon-menu"><li class="nav__item"><a href="#products" class="nav__link" onclick="seleccionar(this)">Productos</a></li></div>
-                    <div class="icon-container"><img src="assets/favicon/services.png" alt="" class="icon-menu"><li class="nav__item"><a href="#services" class="nav__link" onclick="seleccionar(this)">Servicios</a></li></div>
-                    <div class="icon-container"><img src="assets/favicon/contact.png" alt="" class="icon-menu"><li class="nav__item"><a href="#contact" class="nav__link" onclick="seleccionar(this)">Contacto</a></li></div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="index.html" class="seleccionado nav__link active-link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/home.png" alt="" class="icon-menu">
+                                <p>INICIO</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="acerca-de-nosostros.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/nosotros.png" alt="" class="icon-menu">
+                                <p>NOSOTROS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contpaqi.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contpaqi.png" alt="" class="icon-menu">
+                                <p>CONTPAQi®</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="servicios.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/services.png" alt="" class="icon-menu">
+                                <p>SERVICIOS</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="icon-container">
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link" onclick="seleccionar(this)">
+                                <img src="assets/favicon/contact.png" alt="" class="icon-menu">
+                                <p>CONTACTO</p>
+                            </a>
+                        </li>
+                    </div>
                 </ul>
-                <div class="nav__close" id="nav-close">
-                    <i class="bx bx-x"></i>
-                </div>
             </div>
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-grid-alt"></i>
-          </div>
         </nav>
     </header>
+
     <main>
         <div class="slider-wrapper theme-mi-slider">
-            <div id="slider" class="nivoSlider">     
-                <img src="assets/img/slider/image-slider-1.jpg" alt="" title="#htmlcaption1" />    
-                <img src="assets/img/slider/image-slider-2.jpg" alt="" title="#htmlcaption2" />    
-                <img src="assets/img/slider/image-slider-3.jpg" alt="" title="#htmlcaption3" />     
-            </div> 
-            <div id="htmlcaption1" class="nivo-html-caption">     
-                <h1>"AR SERVICES"<br>Impulsando Negocios del Futuro</h1>
-                <p>AR SERVICES es una empresa 100% mexicana ubicada en Tampico, Tamaulipas, dedicada a los sistemas de cómputo, sistemas digitales y es distribuidor asociado CONTPAQi®, brindamos apoyo y asesoría a diferentes tipos de negocios, asesorándolos en cuanto a las actividades administrativas y contables</p>
+            <div id="slider" class="nivoSlider">
+                <img src="assets/img/slider/image-slider-1.jpg" alt="" title="#htmlcaption1" />
+                <img src="assets/img/slider/image-slider-2.jpg" alt="" title="#htmlcaption2" />
+                <img src="assets/img/slider/image-slider-3.jpg" alt="" title="#htmlcaption3" />
             </div>
-            <div id="htmlcaption2" class="nivo-html-caption">     
-                <h1>Obtendrás asesoramiento asesoramiento cuando requieras</h1>
-                <p>Facilita el trabajo de tu negocio, optimiza tus procesos, ahorra tiempo, genera ganancias, evita multas y sanciones y brinda la información necesaria para la toma de deciones efectivas.</p>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <h1 class="slider-tittle">"AR SERVICES"<br>Impulsando Negocios del Futuro</h1>
+                <p class="slider-content">AR SERVICES es una empresa 100% mexicana ubicada en Tampico, Tamaulipas, dedicada a los sistemas de cómputo, sistemas digitales y es distribuidor asociado CONTPAQi®, brindamos apoyo y asesoría a diferentes tipos de negocios, asesorándolos en cuanto a las actividades administrativas y contables</p>
             </div>
-            <div id="htmlcaption3" class="nivo-html-caption">     
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <h1 class="slider-tittle">Obtendrás asesoramiento cuando requieras</h1>
+                <p class="slider-content">Facilita el trabajo de tu negocio, optimiza tus procesos, ahorra tiempo, genera ganancias, evita multas y sanciones y brinda la información necesaria para la toma de deciones efectivas.</p>
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
                 <h1></h1>
             </div>
         </div>
@@ -79,10 +123,16 @@
                         <p>Sistemas Administrativos</p>
                     </div>
                 </li>
-                <li class="li">
+                <li class="li li3">
+                    <div class="icon-tab-container">
+                        <img class="icon-tab-menu" src="assets/favicon/nube.png" alt="">
+                        <p>Sistemas de Nube</p>
+                    </div>
+                </li>
+                <li class="li li4">
                     <div class="icon-tab-container">
                         <img class="icon-tab-menu" src="assets/favicon/software.png" alt="">
-                        <p>Sistemas a la Medida</p>
+                        <p>Softwares Adicionales</p>
                     </div>
                 </li>
             </ul>
@@ -94,8 +144,8 @@
                             <img src="assets/img/cards/contabilidad.png" alt="">
                             <h2>CONTPAQi® Contabilidad</h2>
                             <p>Integra y controla tu proceso contable, fiscal y financiero</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#contabilidad" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -108,8 +158,8 @@
                             <img src="assets/img/cards/nominas.png" alt="">
                             <h2>CONTPAQi® Nóminas</h2>
                             <p>Administra tu nómina y cubre en tiempo con las obligaciones de ley.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#nominas" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -122,8 +172,8 @@
                             <img src="assets/img/cards/bancos.png" alt="">
                             <h2>CONTPAQi® Bancos</h2>
                             <p>Facilita la administración de tus cuentas y flujo de efectivo con el control de ingresos y egresos.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#bancos" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -136,8 +186,8 @@
                             <img src="assets/img/cards/xml.png" alt="">
                             <h2>CONTPAQi® XML en línea+</h2>
                             <p>Busca y descarga de forma automática y masiva los CFDI del portal del SAT. </p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#xml" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -151,8 +201,8 @@
                             <img src="assets/img/cards/Factura.png" alt="">
                             <h2>CONTPAQi® Factura Eletrónica</h2>
                             <p>Automatiza y haz más eficiente tu proceso de facturación.  </p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#factura" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -165,8 +215,8 @@
                             <img src="assets/img/cards/CFDI.png" alt="">
                             <h2>CONTPAQi® CFDI Facturación en Línea+</h2>
                             <p>Administra tu nómina y cubre en tiempo con las obligaciones de ley.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#facturacion" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -179,8 +229,8 @@
                             <img src="assets/img/cards/comercial.png" alt="">
                             <h2>CONTPAQi® Comercial</h2>
                             <p>Ahora cualquier versión de tu CONTPAQi® Comercial con licencia anual incluye gratis Wopen Estándar.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#comercial" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -193,8 +243,8 @@
                             <img src="assets/img/cards/produccion.png" alt="">
                             <h2>CONTPAQi® Producción</h2>
                             <p>Controla y administra los recursos y procesos de producción y fabricación de tu empresa.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#produccion" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -207,8 +257,8 @@
                             <img src="assets/img/cards/PuntoVenta.png" alt="">
                             <h2>CONTPAQi® Punto de Venta</h2>
                             <p>Agiliza las operaciones en tu punto de venta, inventarios, caja y facturación.</p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <a href="contpaqi.html#pv" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -216,14 +266,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="block">
+                <div class="block block3">
                     <div class = "card3">
                         <div class="card-content3">
-                            <img src="" alt="">
-                            <h2></h2>
-                            <p></p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <img src="assets/img/cards/contabiliza.png" alt="">
+                            <h2>CONTPAQi® Contabiliza</h2>
+                            <p>Lleva toda tu información contable en la nube con CONTPAQi® Contabiliza</p>
+                            <a href="contpaqi.html#contabiliza" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -233,11 +283,11 @@
 
                     <div class = "card3">
                         <div class="card-content3">
-                            <img src="" alt="">
-                            <h2></h2>
-                            <p></p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <img src="assets/img/cards/personia.png" alt="">
+                            <h2>CONTPAQi® Personia</h2>
+                            <p>Controla, automatiza y administra tus operaciones de nómina desde cualquier lugar y en todo momento.</p>
+                            <a href="contpaqi.html#personia" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -247,11 +297,11 @@
 
                     <div class = "card3">
                         <div class="card-content3">
-                            <img src="" alt="">
-                            <h2></h2>
-                            <p></p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <img src="assets/img/cards/vende.png" alt="">
+                            <h2>CONTPAQi® Vende</h2>
+                            <p>Realiza todo el proceso para la generación de factura electrónica y administración de documentos emitidos de cuentas por cobrar.</p>
+                            <a href="contpaqi.html#vende" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -261,11 +311,110 @@
 
                     <div class = "card3">
                         <div class="card-content3">
-                            <img src="" alt="">
-                            <h2></h2>
-                            <p></p>
-                            <a href="#" class="button">
-                                Ver Más 
+                            <img src="assets/img/cards/decide.png" alt="">
+                            <h2>CONTPAQi® Decide</h2>
+                            <p>Los reportes que necesitas personalizados y en tiempo real para que tomes las mejores decisiones para tu negocio.</p>
+                            <a href="contpaqi.html#decide" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card3">
+                        <div class="card-content3">
+                            <img src="assets/img/cards/escritorio-virtual.png" alt="">
+                            <h2>CONTPAQi® Escritorio Virtual</h2>
+                            <p>Accede al escritorio de tu computadora desde cualquier dispositivo en el lugar y momento que lo necesites.</p>
+                            <a href="contpaqi.html#escritorio" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card3">
+                        <div class="card-content3">
+                            <img src="assets/img/cards/respaldos.png" alt="">
+                            <h2>CONTPAQi® Respaldos</h2>
+                            <p>Sube, administra y resguarda en la nube, toda la información de tus sistemas CONTPAQi® y de cualquier archivo de tu equipo.      </p>
+                            <a href="contpaqi.html#respaldos" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block block4">
+                    <div class = "card4">
+                        <div class="card-content4">
+                            <img src="assets/img/cards/software.png" alt="">
+                            <h2>Sistemas a la Medida</h2>
+                            <p>Nosotros nos encargamos de hacer realidad ese software para tu empresa.</p>
+                            <a href="servicios.html#software" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card4">
+                        <div class="card-content4">
+                            <img src="assets/img/cards/hosting-dominio.png" alt="">
+                            <h2>Hosting y Dominio</h2>
+                            <p>Convierte el nombre de tu negocio en tu dominio. Regístralo y ayuda a que tus clientes sepan que estás ahí, y lo más importante, que te identifiquen como un profesional dentro de tu sector.</p>
+                            <a href="servicios.html" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card4">
+                        <div class="card-content4">
+                            <img src="assets/img/cards/kaspersky.png" alt="">
+                            <h2>Karspesky</h2>
+                            <p>Ayuda a proteger su equipo de virus comunes, bloquea aplicaciones y archivos peligrosos, y advierte sobre sitios web sospechosos. De esta forma, le ayuda a mantener el equipo seguro.</p>
+                            <a href="servicios.html" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card4">
+                        <div class="card-content4">
+                            <img src="assets/img/cards/office.png" alt="">
+                            <h2>Office 365</h2>
+                            <p>Nuestras herramientas conectan de forma segura a los empleados con clientes y colegas. Acceda a aplicaciones empresariales para aumentar la productividad y la seguridad.</p>
+                            <a href="servicios.html" class="button">
+                                Ver Más
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class = "card4">
+                        <div class="card-content4">
+                            <img src="assets/img/cards/servidor.png" alt="">
+                            <h2>Servidor</h2>
+                            <p>Conjunto completo de soluciones para las empresas que manejan grandes volúmenes de datos. Procese los datos críticos de la empresa con mayor rapidez y de forma rápida y segura.</p>
+                            <a href="servicios.html" class="button">
+                                Ver Más
                                 <span class="material-symbols-outlined">
                                     arrow_right_alt
                                 </span>
@@ -278,7 +427,6 @@
 
         <section id="tranding">
             <div class="container">
-              <!-- <h3 class="text-center section-subheading">- popular -</h3> -->
               <h1 class="text-center section-heading">Productos</h1>
             </div>
             <div class="container">
@@ -287,10 +435,40 @@
                   <!-- Slide-start -->
                   <div class="swiper-slide tranding-slide">
                     <div class="tranding-slide-img">
-                      <img src="assets/img/cards/contabilidad.png" alt="Tranding">
+                      <img src="assets/img/products-slider/comercial-start.png" alt="Tranding">
                     </div>
                     <div class="tranding-slide-content">
-                      <h1 class="price">$100</h1>
+                      <h1 class="price">$2,290.00</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="name">
+                          CONTPAQi® Comercial Start
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="assets/img/products-slider/comercial-pro.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="price">$7,490.00</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="name">
+                          CONTPAQi® Comercial Pro
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="assets/img/products-slider/contabilidad.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="price">$4,690.00</h1>
                       <div class="tranding-slide-content-bottom">
                         <h2 class="name">
                           CONTPAQi® Contabilidad
@@ -302,10 +480,25 @@
                   <!-- Slide-start -->
                   <div class="swiper-slide tranding-slide">
                     <div class="tranding-slide-img">
-                      <img src="assets/img/cards/nominas.png" alt="Tranding">
+                      <img src="assets/img/products-slider/XML.png" alt="Tranding">
                     </div>
                     <div class="tranding-slide-content">
-                      <h1 class="price">$200</h1>
+                      <h1 class="price">$1,690.00</h1>
+                      <div class="tranding-slide-content-bottom">
+                        <h2 class="name">
+                          CONTPAQi® XML en Línea+
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="assets/img/products-slider/nominas.png" alt="Tranding">
+                    </div>
+                    <div class="tranding-slide-content">
+                      <h1 class="price">$4,390.00</h1>
                       <div class="tranding-slide-content-bottom">
                         <h2 class="name">
                           CONTPAQi® Nóminas
@@ -317,13 +510,13 @@
                   <!-- Slide-start -->
                   <div class="swiper-slide tranding-slide">
                     <div class="tranding-slide-img">
-                      <img src="assets/img/cards/bancos.png" alt="Tranding">
+                      <img src="assets/img/products-slider/comercial-premium.png" alt="Tranding">
                     </div>
                     <div class="tranding-slide-content">
-                      <h1 class="price">$300</h1>
+                      <h1 class="price">$8,490.00</h1>
                       <div class="tranding-slide-content-bottom">
                         <h2 class="name">
-                          CONTPAQi® Bancos
+                          CONTPAQi® Comercial Premium
                         </h2>
                       </div>
                     </div>
@@ -332,13 +525,13 @@
                   <!-- Slide-start -->
                   <div class="swiper-slide tranding-slide">
                     <div class="tranding-slide-img">
-                      <img src="assets/img/cards/Factura.png" alt="Tranding">
+                      <img src="assets/img/products-slider/office.png" alt="Tranding">
                     </div>
                     <div class="tranding-slide-content">
-                      <h1 class="price">$400</h1>
+                      <h1 class="price">$268.80</h1>
                       <div class="tranding-slide-content-bottom">
                         <h2 class="name">
-                          CONTPAQi® Factura Electrónica
+                          Licencia Office 365
                         </h2>
                       </div>
                     </div>
@@ -347,20 +540,25 @@
                   <!-- Slide-start -->
                   <div class="swiper-slide tranding-slide">
                     <div class="tranding-slide-img">
-                      <img src="assets/img/cards/CFDI.png" alt="Tranding">
+                      <img src="assets/img/products-slider/kaspersky.png" alt="Tranding">
                     </div>
                     <div class="tranding-slide-content">
-                      <h1 class="price">$500</h1>
+                      <h1 class="price">$380.00</h1>
                       <div class="tranding-slide-content-bottom">
                         <h2 class="name">
-                          CONTPAQi® CFDI Facturación en Línea+
+                          Licencia Kasperky Internet Security
                         </h2>
                       </div>
                     </div>
                   </div>
                   <!-- Slide-end -->
                 </div>
-      
+
+                <div class="text-slider">
+                    <p>*PRECIOS SIN IVA.</p>
+                    <p>*TODOS LOS PRODUCTOS CONTPAQI SON LICENCIA ANUAL (1 USUARIO 1 EMPRESA)</p>
+                </div>
+
                 <div class="tranding-slider-control">
                   <div class="swiper-button-prev slider-arrow">
                     <ion-icon name="arrow-back-outline"></ion-icon>
@@ -370,14 +568,259 @@
                   </div>
                   <div class="swiper-pagination"></div>
                 </div>
-      
               </div>
             </div>
-          </section>
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        </section>
+
+        <section class="post-list">
+            <div class="news-subtitle">
+                <h2>Noticias</h2>
+            </div>
+            <div class="content">
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-img-1"></div>
+                    </div>
+                    <div class="post-body">
+                        <span>1 de Enero, 2023</span>
+                        <h2>Facturación Electrónica</h2>
+                        <p>
+                            A partir del 1ro de abril del 2023 es obligatorio la emisión del CFDI versión 4.0, esto con el fin de que el SAT pueda recibir información de los contribuyentes de mayor calidad, así que traemos un guía de cómo generar una factura electrónica 4.0 sin complicaciones...
+                        </p>
+                        <a href="noticia1.html" class="post-link">Leer más...</a>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-img-2"></div>
+                    </div>
+                    <div class="post-body">
+                        <span>1 de Febrero, 2023</span>
+                        <h2>Timbre de <br> Nomina 4.0</h2>
+                        <p>
+                            Para comenzar a timbrar recibos de nómina con la versión 4.0 del Anexo 20, es necesario realizar lo siguiente:
+                            <br>1.- Captura el nombre fiscal de tu empresa, desde el catálogo de empresas.
+                            <br>2.- Registra el nombre de tus empleados...
+                        </p>
+                        <a href="noticia2.html" class="post-link">Leer más...</a>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-header">
+                        <div class="post-img-3"></div>
+                    </div>
+                    <div class="post-body">
+                        <span>1 de Marzo, 2023</span>
+                        <h2>Vacaciones Dignas <br> 2023</h2>
+                        <p>La nueva disposición publicada en el Diario Oficial de la Federación (DOF) en diciembre de 2022, establece que los empleados tendrán derecho a 12 días de vacaciones tras el primer año de trabajo, a partir de entonces aumentarán dos días por cada año hasta llegar a 20 días...</p>
+                        <a href="noticia3.html" class="post-link">Leer más...</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="customer-slider">
+            <h2>Nuestros Clientes</h2>
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-3.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-4.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-5.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-6.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-3.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-4.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-5.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-6.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-8.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-9.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-10.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-3.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-4.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-5.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-6.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-7.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-8.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-9.jpeg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/customer-slider/cliente-10.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h2>Testimonios</h2>
+            <div class="review-box">
+                <div id="testimonial-slide">
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <img src="assets/img/customer-slider/cliente-3.png" alt="">
+                            <h3>Tecnoden</h3>
+                        </div>
+                        <p>Excelente calidad en el servicio, brindan asesoría, atención al cliente y en post venta continúan asesorando, brindado soporte remoto y resolviendo cualquier duda en todo momento. Los recomendamos </p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="profile">
+                            <img src="assets/img/customer-slider/cliente-2.png" alt="">
+                            <h3>IER POWER TECHNOLOGY</h3>
+                        </div>
+                        <p>Eficacia y rapidez en la prestación de servicio personalizado. Excelente personal capacitado, con alto grado de integridad empresarial y gran sentido de responsabilidad en el cumplimiento de compromisos adquiridos. Recomendados ampliamente. Excelente servicio.</p>
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <img src="assets/img/testimonial-slider/up.png" id="upArrow">
+                    <img src="assets/img/testimonial-slider/down.png" id="downArrow">
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     </main>
-    
+
+    <footer>
+        <div class="containerFooter">
+            <div class="column1">
+                <img src="assets/logo/logo-dark.png" alt="" class="img__logo footer-logo">
+                <p class="contenidoColumna1">
+                    "Impulsando Negocios del Futuro"
+                </p>
+                <p class="contenidoColumna1">
+                    Somos profesionales experimentados que entendemos que los servicios estan cambiando, y somos verdaderos aliados que se preocupan por su futuro éxito empresarial.
+                </p>
+            </div>
+
+            <div class="column2">
+                <h2 class="tituloColumnas">CONTPAQi®</h2>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-contables">Sistemas Contables</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-administrativos">Sistemas Administrativos</a><br>
+                <a class="contenidoColumnas" href="contpaqi.html#sistemas-nube">Sistemas de Nube</a><br>
+            </div>
+
+            <div class="column3">
+                <h2 class="tituloColumnas">SERVICIOS</h2>
+                <a class="contenidoColumnas" href="servicios.html/#software">Software a la Medida</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#desarrollo-web">Desarrollo Web</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#asesoria">Asesoría</a><br>
+                <a class="contenidoColumnas" href="servicios.html/#venta-reparacion">Venta y Reparación de PCs</a><br>
+            </div>
+
+            <div class="column4">
+                <h2 class="tituloColumnas">CONTÁCTANOS</h2>
+                <div class="redes-container">
+                    <a href="https://www.facebook.com/ARSERVICESCONTPAQI" Target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/ar_services._?igshid=MzRlODBiNWFlZA==" Target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="tel:+528335110241"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:info@arservices.mx"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="container-background-logo">
+                <img class="background-logo" src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+        <div class="final-footer">
+            <p class="derechosReservados">
+                @2023 AR Services. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=528333461003&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float "></i>
+    </a>
+
 </body>
 </html>
