@@ -59,11 +59,7 @@
 }
 
 #tranding {
-<<<<<<< HEAD
   max-height: 650px;
-=======
-  height: 700px;
->>>>>>> afc925a (modified file)
   background: url("../img/products-slider/background-slider.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
