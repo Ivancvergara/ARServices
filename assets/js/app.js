@@ -1,5 +1,7 @@
 $(window).on('load', function() {
-    $('#slider').nivoSlider(); 	
+    $('#slider').nivoSlider();
+    $('#onload').fadeOut();
+    $('html').removeClass('scroll');
 }); 
 
 $('.hamburguer-icon').on('click', function(){
